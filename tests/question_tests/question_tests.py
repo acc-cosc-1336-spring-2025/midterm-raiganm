@@ -2,15 +2,12 @@
 import unittest
 
 #follow this example to add questions b, c, and d for testing including their functions
-from src.question_a.question_a import test_config, get_sum_of_evens
+from src.question_b.question_b import test_config, get_miles_per_hour
 
 class Test_Config(unittest.TestCase):
 
-    def test_question_a_config(self):
+    def test_question_b_config(self):
         self.assertEqual(True, test_config())
 
-    def test_get_sum_of_evens(self):
-        self.assertEqual(get_sum_of_evens(11), 30)
-        self.assertEqual(get_sum_of_evens(10), 30)
-        self.assertEqual(get_sum_of_evens(8), 20)
-
+    def test_get_miles_per_hour(self):
+        self.assertEqual(get_miles_per_hour(32, 60), 19.883872)
